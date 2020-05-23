@@ -1,5 +1,7 @@
 export class ContaCorrent {
+  cliente;
   agencia;
+
   _saldo = 0; // padrão que a galera ta seguindo enquanto a feature não é aprovado
   // #saldo = 0; https://github.com/tc39/proposal-class-fields#private-fields
 
