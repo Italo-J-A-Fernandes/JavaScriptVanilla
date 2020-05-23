@@ -15,10 +15,11 @@ class ContaCorrent {
   }
 
   depositar(valor) {
+    // tecnica early return
     if(valor <= 0) {
       return;
     }
-
+    
     this._saldo += valor;
   }
 
