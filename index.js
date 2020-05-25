@@ -10,4 +10,5 @@ contaCorrenteCliente1.depositar(500);
 
 const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
 
+console.log(contaCorrenteCliente1);
 console.log(contaPoupanca);
