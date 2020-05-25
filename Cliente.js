@@ -3,8 +3,6 @@ export class Cliente {
     this.nome = nome;
     this._cpf = cpf;
   }
-  nome;
-  _cpf;
 
   get cpf(){
     return this._cpf;
