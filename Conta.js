@@ -1,8 +1,13 @@
+//Calsse Abstrada
 export class Conta {
   constructor(sladoInicial, cliente, agencia){
     this._saldo = sladoInicial;
     this._cliente = cliente;
     this._agencia = agencia;
+
+    if(this.constructor == Conta){
+      throw new Error("Você não deveria instanciar um objeto do tipo Conta diretamente");
+    }
   }
 
   set cliente(novoValor) {
