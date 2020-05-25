@@ -7,6 +7,7 @@ const cliente2 = new Cliente("Alice", 88877722289);
 
 const contaCorrenteCliente1 = new ContaCorrente(cliente1, 1001);
 contaCorrenteCliente1.depositar(500);
+contaCorrenteCliente1.sacar(100);
 
 const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
 
