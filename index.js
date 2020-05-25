@@ -15,3 +15,4 @@ console.log(cliente1);
 console.log(cliente2);
 console.log(contaCorrenteCliente1);
 console.log(contaCorrente2);
+console.log(ContaCorrente.numeroDeContas);

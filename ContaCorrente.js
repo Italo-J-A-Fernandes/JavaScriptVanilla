@@ -1,10 +1,7 @@
 import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente {
-  constructor(cliente, agencia){
-    this._cliente = cliente;
-    this.agencia = agencia;
-  }
+  static numeroDeContas = 0;
   agencia;
   
   _saldo = 0; // padrão que a galera ta seguindo enquanto a feature não é aprovado
@@ -23,6 +20,12 @@ export class ContaCorrente {
 
   get saldo(){
     return this._saldo;
+  }
+
+  constructor(cliente, agencia){
+    this._cliente = cliente;
+    this.agencia = agencia;
+    ContaCorrente.numeroDeContas += 1;
   }
 
   sacar(valor) {
