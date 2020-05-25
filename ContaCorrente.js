@@ -1,6 +1,10 @@
 import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente {
+  constructor(cliente, agencia){
+    this._cliente = cliente;
+    this.agencia = agencia;
+  }
   agencia;
   
   _saldo = 0; // padrão que a galera ta seguindo enquanto a feature não é aprovado
