@@ -27,6 +27,6 @@ diretor.cadastrarSenha("123456");
 const gerente = new Gerente("José", 5000, 12378945685);
 gerente.cadastrarSenha("123");
 
-const estaLogado = SistemaDeAutenticacao.login(gerente, "123");
+const estaLogado = SistemaDeAutenticacao.login(client, "754");
 
 console.log(estaLogado);
