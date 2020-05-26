@@ -1,5 +1,7 @@
 /*
   Ser autenticavel(usuario) significa ter a método autenticar
+
+  ducky type
 */
 export class SistemaDeAutenticacao {
   static login(usuario, senha){
