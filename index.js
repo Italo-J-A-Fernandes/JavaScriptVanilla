@@ -19,11 +19,14 @@ import { SistemaDeAutenticacao } from "./SistemaDeAutenticacao.js";
 // contaSalario.depositar(150);
 // contaSalario.sacar(50);
 
+const client = new Cliente("Lais", 75642316599, "754");
+
 const diretor = new Diretor("Rodrigo", 10000, 12345678900);
 diretor.cadastrarSenha("123456");
 
 const gerente = new Gerente("José", 5000, 12378945685);
+gerente.cadastrarSenha("123");
 
-const estaLogado = SistemaDeAutenticacao.login(diretor, "123456");
+const estaLogado = SistemaDeAutenticacao.login(gerente, "123");
 
 console.log(estaLogado);
